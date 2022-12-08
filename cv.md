@@ -13,3 +13,13 @@
 - "Basics of HTML and CSS". Moscow Institute of Physics and Technology, Yandex and E-Learning Development Fund;
 - JavaScript Intensive by Result;
 - RS Schools Course «JavaScript/Front-end. Stage 0». (in progress)
+
+## Skills
+
+- HTML🟢 🟢 🟢 🟢 ⚪
+- CSS🟢 🟢 🟢 ⚪ ⚪
+- JS 🟢 ⚪ ⚪ ⚪ ⚪
+- FIGMA 🟢 🟢 ⚪ ⚪ ⚪
+- PHOTOSHOP 🟢 🟢 🟢 🟢 ⚪
+- SQL 🟢 🟢 🟢 ⚪ ⚪
+- ENGLISH 🟢 ⚪ ⚪ ⚪ ⚪
