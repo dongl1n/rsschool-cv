@@ -6,6 +6,7 @@
 - Discord: #6653
 
 ## About myself
+> When I grow up I will be a frontend developer.
 
 ## Education and courses
 - St. Petersburg College of Telecommunications named after E. T. Krenkel. Specialty: Technician-Programmer;
