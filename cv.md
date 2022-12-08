@@ -23,3 +23,13 @@
 - PHOTOSHOP 🟢 🟢 🟢 🟢 ⚪
 - SQL 🟢 🟢 🟢 ⚪ ⚪
 - ENGLISH 🟢 ⚪ ⚪ ⚪ ⚪
+
+## Code example
+```sh
+function sum(a, b) {
+  return a + b;
+}
+
+let result = sum(5, 2);
+alert( result );
+```
