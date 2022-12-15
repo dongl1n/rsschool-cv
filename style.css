@@ -54,3 +54,60 @@ body{
 .header_item:not(:last-child){
     padding: 0px 25px 0px 0px;
 }
+
+/*================================================================================================*/
+main__container{
+    display: flex;
+    align-items: center;
+    padding-top: 55px;
+}
+
+.main__profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 100px;
+}
+
+.main__image{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 7px solid rgb(125, 125, 158);
+}
+
+.main__info-block{
+    padding-left: 100px;
+}
+
+.main__name{
+    font-size: 56px;
+}
+
+.main__about{
+    font-size: 24px;
+}
+
+.main__about > span{
+    color:rgb(125, 125, 158);
+}
+
+.main__wrapper-contacts{
+    display: flex;
+    justify-content: center;
+}
+.main__contacts{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.main__contacts:not(:last-child){
+    padding-right: 30px;
+}
+
+.main__contacts::first-letter {
+    color:rgb(125, 125, 158);
+    font-weight: 700;
+}
