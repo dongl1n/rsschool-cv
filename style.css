@@ -6,6 +6,7 @@
 }
 a{
     text-decoration: none;
+    color: inherit;
 }
 ul, ol, li{
     list-style: none;
@@ -18,13 +19,17 @@ h1, h2, h3, h4, h5, h6{
     font-size: inherit;
 }
 
+html{
+    height: 100%;
+}
 body{
-    background-color: rgb(158, 158, 182);
     font-family: "Montserrat";
     font-size: 16px;
     font-weight: 600;
+    background-color: rgb(113, 113, 168);
     color: white;
 }
+
 ._container{
     box-sizing: content-box;
     max-width: 1300px; 
@@ -32,7 +37,14 @@ body{
     padding: 0 15px;
 }
 
-/*================================================================================================*/
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+/*========================================================HEADER========================================================*/
 .header__container{
     display: flex;
     align-items: center;
@@ -44,24 +56,34 @@ body{
     width: 83px;
     height: 33px;
 }
-.header_list{
+.header__list{
     padding-left: 600px;
 }
-.header_item{
+.header__item{
     display: inline-block;
 }
 
-.header_item:not(:last-child){
+.header__item::first-letter{
+    color: rgb(213, 213, 255);
+}
+
+
+.header__item:not(:last-child){
     padding: 0px 25px 0px 0px;
 }
 
-/*================================================================================================*/
-main__container{
-    display: flex;
-    align-items: center;
-    padding-top: 55px;
+.header__item > a:hover{
+	background-repeat: no-repeat;
+	background-position: center bottom 1px;
+	background-size: 100% 2px;
+	background-image: linear-gradient(to right, rgb(213, 213, 255), rgb(71, 71, 126));    
 }
 
+
+/*========================================================MAIN__PROFILE========================================================*/
+main{
+    flex: 1 1 auto;
+}
 .main__profile{
     display: flex;
     flex-direction: row;
@@ -75,7 +97,7 @@ main__container{
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border: 7px solid rgb(125, 125, 158);
+    border: 7px solid rgb(213, 213, 255);
 }
 
 .main__info-block{
@@ -91,23 +113,132 @@ main__container{
 }
 
 .main__about > span{
-    color:rgb(125, 125, 158);
+    color:rgb(213, 213, 255);;
 }
 
-.main__wrapper-contacts{
+.main__contacts-list{
     display: flex;
     justify-content: center;
 }
-.main__contacts{
+.main__contacts-item{
+    display: inline;
     font-size: 14px;
     font-weight: 400;
 }
 
-.main__contacts:not(:last-child){
+.main__contacts-item:not(:last-child){
     padding-right: 30px;
 }
 
-.main__contacts::first-letter {
-    color:rgb(125, 125, 158);
+.main__contacts-item:first-letter {
+    color:rgb(213, 213, 255);;
     font-weight: 700;
+}
+
+/*========================================================MAIN__OTHER========================================================*/
+._other-info-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+
+    font-size: 18px;
+
+}
+
+._other-info-header{
+    font-size: 26px;
+    font-weight: 700;
+    padding-top: 115px;
+
+    text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: center bottom 1px;
+	background-size: 100% 2px;
+	background-image: linear-gradient(to right, rgb(213, 213, 255), rgb(71, 71, 126));
+}
+
+
+._other-info-header:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.skills__table{
+    vertical-align: center;
+    text-align: right;
+    border-spacing: 30px;
+    border-collapse: collapse;
+    
+}
+
+th:nth-child(2), td:nth-child(2) {
+    padding: 8px;
+    text-align: right;
+    border-left: 2px solid rgb(213, 213, 255);;
+}
+
+th, td {
+    padding-right: 10px;
+    
+}
+
+.education__item{
+    list-style-type: square;
+}
+
+.education__item:not(:last-child){
+    padding-bottom: 5px;
+}
+
+.education__item::marker{
+    color:rgb(213, 213, 255);
+}
+
+.code__wrapper{
+    width: 70%;
+    padding: 30px 30px 10px 30px;
+
+    font-weight: 700;
+    color: black;
+    background-color:rgb(213, 213, 255);
+}
+
+.project__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.project__list img{
+    width: 600px;
+    
+}
+
+.project__item{
+    border: 3px solid rgb(213, 213, 255);
+}
+
+/*========================================================FOOTER========================================================*/
+
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 70px;
+    padding: 30px;
+
+    background-color:rgb(213, 213, 255);
+}
+
+
+.footer__name, .footer__git{
+    margin-top: 10px;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
